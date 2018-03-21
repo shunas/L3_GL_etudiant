@@ -18,11 +18,16 @@ stdenv.mkDerivation {
     gnome3.nemiver
     gnuplot
     imagemagick
+    opencv
     pkgconfig
     poco
     sqlitebrowser
     valgrind
   ];
 
+  # ~/.bashrc : export PS1="\W \$ "
+  shellHook = ''
+    export PS1="[\W] \$ "
+  '';
 }
 
