@@ -23,6 +23,7 @@ stdenv.mkDerivation {
     poco
     sqlitebrowser
     valgrind
+    vlc
   ];
 
   # ~/.bashrc : export PS1="\W \$ "
